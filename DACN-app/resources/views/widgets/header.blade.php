@@ -99,7 +99,7 @@
                     aria-hidden="true"></span></a>
         </div>
         <div class="logo">
-            <h1><a href="index.html">BÁO STORE SHOP<span>Better quality than your ex</span></a></h1>
+            <h1><a href="/">BÁO STORE<span>Better quality than your ex</span></a></h1>
         </div>
         <div class="search">
             <input class="search_box" type="checkbox" id="search_box">
@@ -186,8 +186,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="short-codes.html">Short Codes</a></li>
-                    <li><a href="mail.html">Mail Us</a></li>
+=                    <li><a href="mail.html">Mail Us</a></li>
                 </ul>
             </div>
         </nav>

@@ -3,7 +3,10 @@
         <div class="w3_footer_grids">
             <div class="col-md-3 w3_footer_grid">
                 <h3>Contact</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <p>BÁO STORE was born on December 8, 2014. BÁO STORE wishes to become a favorite destination, bringing
+                    products that
+                    can fuel the passion of ballers.</p>
+                </p>
                 <ul class="address">
                     <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>180 Cao Lỗ, Phường 4,
                         Quận 8, <span>Thành Phố Hồ Chí Minh.</span></li>
@@ -17,7 +20,6 @@
                 <ul class="info">
                     <li><a href="/about">About Us</a></li>
                     <li><a href="mail.html">Contact Us</a></li>
-                    <li><a href="short-codes.html">Short Codes</a></li>
                     <li><a href="faq.html">FAQ's</a></li>
                     <li><a href="/product">Special Products</a></li>
                 </ul>
@@ -25,11 +27,11 @@
             <div class="col-md-3 w3_footer_grid">
                 <h3>Category</h3>
                 <ul class="info">
-                    <li><a href="dresses.html">Dresses</a></li>
-                    <li><a href="sweaters.html">Sweaters</a></li>
-                    <li><a href="shirts.html">Shirts</a></li>
-                    <li><a href="sarees.html">Sarees</a></li>
-                    <li><a href="skirts.html">Shorts & Skirts</a></li>
+                    <li><a href="/tanktop">TANK TOP</a></li>
+                    <li><a href="/jersey">JERSEY</a></li>
+                    <li><a href="/shorts">SHORTS</a></li>
+                    <li><a href="/jackets">JACKETS/HOODIES/SWEATER</a></li>
+                    <li><a href="/t-shirts">T-SHIRT</a></li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
