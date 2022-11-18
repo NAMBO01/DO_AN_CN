@@ -40,6 +40,8 @@
                                                 <input placeholder="Name" name="Name" type="text" required="">
                                                 <input placeholder="Email Address" name="Email" type="email"
                                                     required="">
+                                                <input placeholder="User Name" name="tai_khoan" type="text"
+                                                    required=""><br>
                                                 <input placeholder="Password" name="Password" type="password"
                                                     required="">
                                                 <input placeholder="Confirm Password" name="Password" type="password"
@@ -186,7 +188,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-=                    <li><a href="mail.html">Mail Us</a></li>
+                    = <li><a href="/contact">Mail Us</a></li>
                 </ul>
             </div>
         </nav>

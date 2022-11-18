@@ -16,15 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/index ', function () {
+Route::post('/', function () {
     return view('index');
 });
-Route::get('/product ', function () {
-    return view('product');
-});
+
+Route::get(
+    '/product ',
+    'App\Http\Controllers\SanPhamController@index'
+);
+Route::get(
+    '/product/pagination/{current_page}',
+    'App\Http\Controllers\SanPhamController@pagination'
+);
+
 Route::get('/single ', function () {
     return view('single');
 });
 Route::get('/checkout ', function () {
     return view('checkout');
+});
+Route::get('/contact ', function () {
+    return view('contact');
 });

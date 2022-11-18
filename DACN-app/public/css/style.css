@@ -1414,7 +1414,7 @@ h2.resp-accordion {
     font-size: 14px;
 }
 .register input[type="password"],
-.register input[type="email"] {
+.register input[type="email"], .register input[type="text"] {
     margin: 1em 0 0;
 }
 div#horizontalTab ul {
