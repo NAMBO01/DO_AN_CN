@@ -584,19 +584,26 @@ ul.multi-column-dropdown h6 {
 .agile_ecommerce_tab_left h5 {
     margin: 2em 0 0;
 }
+
 .agile_ecommerce_tab_left h5 a {
-    font-size: 1.2em;
+    font-size: 13px;
     color: #ff9b05;
     text-decoration: none;
+    font-weight: bold;
 }
 .agile_ecommerce_tab_left h5 a:hover {
     color: #212121;
 }
+
 .simpleCart_shelfItem p {
     font-size: 1.2em;
     color: #212121;
     margin: 0.5em 0 1em;
     font-weight: 600;
+}
+.simpleCart_shelfItem {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .simpleCart_shelfItem p span {
     color: #999;
@@ -623,6 +630,7 @@ ul.multi-column-dropdown h6 {
     color: #fff;
     border: 1px solid #ff9b05;
 }
+
 /*-- image-hover --*/
 .hs_bottom {
     position: absolute;
@@ -1074,9 +1082,10 @@ ul.wmuSliderPagination {
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: 2px;
-    color: #ff9b05;
+    color: black;
     background: url(../images/img-sp.png) no-repeat 112px -4px;
     padding: 0 45px 0 0;
+    font-weight: bold;
 }
 .agileinfo_banner_bottom1_grid_left a:hover,
 .team-bottom a:hover {
@@ -1414,7 +1423,8 @@ h2.resp-accordion {
     font-size: 14px;
 }
 .register input[type="password"],
-.register input[type="email"], .register input[type="text"] {
+.register input[type="email"],
+.register input[type="text"] {
     margin: 1em 0 0;
 }
 div#horizontalTab ul {

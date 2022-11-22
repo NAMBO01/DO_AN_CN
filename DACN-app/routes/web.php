@@ -13,12 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::post('/', function () {
-    return view('index');
-});
+Route::get(
+    '/',
+    'App\Http\Controllers\SanPhamController@san_pham_moi'
+);
+
 
 Route::get(
     '/product ',

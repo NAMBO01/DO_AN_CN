@@ -14,7 +14,9 @@
                         <div class="sap_tabs">
                             <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
                                 <ul>
-                                    <li class="resp-tab-item" aria-controls="tab_item-0"><span>Sign in</span></li>
+                                    <li class="resp-tab-item" aria-controls="tab_item-0"><a href="/login">
+                                            <span>Sign in</span></a>
+                                    </li>
                                     <li class="resp-tab-item" aria-controls="tab_item-1"><span>Sign up</span></li>
                                 </ul>
                                 <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
@@ -188,7 +190,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
-                    = <li><a href="/contact">Mail Us</a></li>
+                    <li><a href="/contact">Mail Us</a></li>
                 </ul>
             </div>
         </nav>

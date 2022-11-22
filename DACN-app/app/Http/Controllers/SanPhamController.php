@@ -26,10 +26,43 @@ class SanPhamController extends Controller
             ->select(DB::raw('COUNT(*) as tong_so_luong'))->first();
         //echo '<pre>',print_r($tong_so_luong),'</pre>';
         $so_trang = ceil($tong_so_luong->tong_so_luong / 10);
+
+        $related_products = DB::table('bs_san_pham')->where('3')->get();
+
         return view('product')
             ->with('ds_san_pham', $ds_san_pham)
             ->with('so_trang', $so_trang)
             ->with('cur_page', $cur_page);
+    }
+    function san_pham_moi()
+    {
+        $new_product = DB::table('bs_san_pham')
+            ->select(DB::raw('ma_san_pham,ten_san_pham,don_gia,gia_giam,hinh'))
+            ->where('noi_bat', 1)
+            ->limit(4)
+            ->get();
+
+        $t_shirt = DB::table('bs_san_pham')
+            ->where('id_loai_sp', 27)
+            ->limit(3)
+            ->get();
+
+        $n_shoes = DB::table('bs_san_pham')
+            ->where('id_loai_sp', 24)
+            ->limit(3)
+            ->get();
+
+        $n_backpack = DB::table('bs_san_pham')
+            ->where('id_loai_sp', 22)
+            ->limit(3)
+            ->get();
+
+
+        return view('index')
+            ->with('new_product', $new_product)
+            ->with('t_shirt', $t_shirt)
+            ->with('n_shoes', $n_shoes)
+            ->with('n_backpack', $n_backpack);
     }
     // phân trang bằng paginationpagination
     function pagination($current_page)

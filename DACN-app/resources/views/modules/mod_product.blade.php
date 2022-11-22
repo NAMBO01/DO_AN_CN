@@ -411,46 +411,36 @@
     <div class="container">
         <h3>Related Products</h3>
         <ul id="flexiselDemo2">
-            <li>
-                <div class="w3l_related_products_grid">
-                    <div class="agile_ecommerce_tab_left dresses_grid">
-                        <div class="hs-wrapper hs-wrapper3">
-                            <img src="images/51.jpg" alt=" " class="img-responsive" />
-                            <img src="images/41.jpg" alt=" " class="img-responsive" />
-                            <img src="images/27.jpg" alt=" " class="img-responsive" />
-                            <img src="images/28.jpg" alt=" " class="img-responsive" />
-                            <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/30.jpg" alt=" " class="img-responsive" />
-                            <img src="images/36.jpg" alt=" " class="img-responsive" />
-                            <img src="images/38.jpg" alt=" " class="img-responsive" />
-                            <div class="w3_hs_bottom">
-                                <div class="flex_ecommerce">
-                                    <a href="#" data-toggle="modal" data-target="#myModal6"><span
-                                            class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+            @foreach ($related_products as $r_product)
+                <li>
+                    <div class="w3l_related_products_grid">
+                        <div class="agile_ecommerce_tab_left dresses_grid">
+                            <div class="hs-wrapper hs-wrapper3">
+                                <img src="images/51.jpg" alt=" " class="img-responsive" />
+
+                                <div class="w3_hs_bottom">
+                                    <div class="flex_ecommerce">
+                                        <a href="#" data-toggle="modal" data-target="#myModal6"><span
+                                                class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <h5><a href="/single">Long Purple Skirts</a></h5>
-                        <div class="simpleCart_shelfItem">
-                            <p class="flexisel_ecommerce_cart"><span>$312</span> <i class="item_price">$212</i>
-                            </p>
-                            <p><a class="item_add" href="#">Add to cart</a></p>
+                            <h5><a href="/single">Long Purple Skirts</a></h5>
+                            <div class="simpleCart_shelfItem">
+                                <p class="flexisel_ecommerce_cart"><span>$312</span> <i class="item_price">$212</i>
+                                </p>
+                                <p><a class="item_add" href="#">Add to cart</a></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-            <li>
+                </li>
+            @endforeach
+            {{-- <li>
                 <div class="w3l_related_products_grid">
                     <div class="agile_ecommerce_tab_left dresses_grid">
                         <div class="hs-wrapper hs-wrapper3">
                             <img src="images/36.jpg" alt=" " class="img-responsive" />
-                            <img src="images/41.jpg" alt=" " class="img-responsive" />
-                            <img src="images/27.jpg" alt=" " class="img-responsive" />
-                            <img src="images/28.jpg" alt=" " class="img-responsive" />
-                            <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/30.jpg" alt=" " class="img-responsive" />
-                            <img src="images/36.jpg" alt=" " class="img-responsive" />
-                            <img src="images/38.jpg" alt=" " class="img-responsive" />
+                           
                             <div class="w3_hs_bottom">
                                 <div class="flex_ecommerce">
                                     <a href="#" data-toggle="modal" data-target="#myModal6"><span
@@ -472,13 +462,7 @@
                     <div class="agile_ecommerce_tab_left dresses_grid">
                         <div class="hs-wrapper hs-wrapper3">
                             <img src="images/38.jpg" alt=" " class="img-responsive" />
-                            <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/27.jpg" alt=" " class="img-responsive" />
-                            <img src="images/28.jpg" alt=" " class="img-responsive" />
-                            <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/30.jpg" alt=" " class="img-responsive" />
-                            <img src="images/36.jpg" alt=" " class="img-responsive" />
-                            <img src="images/38.jpg" alt=" " class="img-responsive" />
+                           
                             <div class="w3_hs_bottom">
                                 <div class="flex_ecommerce">
                                     <a href="#" data-toggle="modal" data-target="#myModal6"><span
@@ -500,13 +484,7 @@
                     <div class="agile_ecommerce_tab_left dresses_grid">
                         <div class="hs-wrapper hs-wrapper3">
                             <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/41.jpg" alt=" " class="img-responsive" />
-                            <img src="images/27.jpg" alt=" " class="img-responsive" />
-                            <img src="images/28.jpg" alt=" " class="img-responsive" />
-                            <img src="images/37.jpg" alt=" " class="img-responsive" />
-                            <img src="images/30.jpg" alt=" " class="img-responsive" />
-                            <img src="images/36.jpg" alt=" " class="img-responsive" />
-                            <img src="images/38.jpg" alt=" " class="img-responsive" />
+                           
                             <div class="w3_hs_bottom">
                                 <div class="flex_ecommerce">
                                     <a href="#" data-toggle="modal" data-target="#myModal6"><span
@@ -522,7 +500,7 @@
                         </div>
                     </div>
                 </div>
-            </li>
+            </li> --}}
         </ul>
         <script type="text/javascript">
             $(window).load(function() {

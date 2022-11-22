@@ -54,449 +54,118 @@
                 </ul>
                 <div id="myTabContent" class="tab-content">
                     <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
-                        <div class="agile_ecommerce_tabs">
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/ÁO THUN DERRICK CLUB 1.png" alt=" "
+                        <div class="agile_ecommerce_tabs ">
+                            @foreach ($t_shirt as $shirt)
+                                <div class="col-md-4 agile_ecommerce_tab_left ">
+                                    <img src="images/hinh_sp/{{ $shirt->hinh }}" alt=" "
                                         class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
+
+                                    <h5>
+                                        <a href="/single?id_sp={{ $shirt->ma_san_pham }}">
+                                            {{ $shirt->ten_san_pham }} </a>
+                                    </h5>
+                                    <div class="simpleCart_shelfItem ">
+                                        <p><span>${{ $shirt->don_gia }}</span> <i
+                                                class="item_price">${{ $shirt->gia_giam }}</i></p>
+                                        <p><a class="item_add" href="#">Add to cart</a></p>
                                     </div>
+
                                 </div>
-                                <h5><a href="/single">T-Shirt</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/ÁO THUN DERRICK CLUB 3.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 4.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 3.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 4.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 3.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 4.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 3.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN DERRICK CLUB 4.png" alt=" "
-                                        class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">T-Shirt</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ÁO THUN NIKE JUST DO IT - GRAPHIC 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">T-Shirt</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
+                            @endforeach
+
                             <div class="clearfix"> </div>
                         </div>
                     </div>
+                    {{-- shoes --}}
                     <div role="tabpanel" class="tab-pane fade" id="skirts" aria-labelledby="skirts-tab">
-                        <div class="agile_ecommerce_tabs">
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal6"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
+                        <div class="agile_ecommerce_tabs ">
+                            @foreach ($n_shoes as $shoes)
+                                <div class="col-md-4 agile_ecommerce_tab_left ">
+                                    <img src="images/hinh_sp/{{ $shoes->hinh }}" alt=" "
+                                        class="img-responsive" />
+
+                                    <h5>
+                                        <a href="/single?id_sp={{ $shoes->ma_san_pham }}">
+                                            {{ $shoes->ten_san_pham }} </a>
+                                    </h5>
+                                    <div class="simpleCart_shelfItem ">
+                                        <p><span>${{ $shoes->don_gia }}</span> <i
+                                                class="item_price">${{ $shoes->gia_giam }}</i></p>
+                                        <p><a class="item_add" href="#">Add to cart</a></p>
                                     </div>
+
                                 </div>
-                                <h5><a href="/single">Shoes</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 2.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 3.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 4.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 1.png" alt=" "
-                                        class="img-responsive" />
-                                    <img src="images/ADIDAS ADIFOM Q OFF-WHITE 2.png" alt=" "
-                                        class="img-responsive" />
-                                    {{-- <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" /> --}}
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal6"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Skirt</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal6"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Skirt</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
+                            @endforeach
+
                             <div class="clearfix"> </div>
                         </div>
                     </div>
+                    {{-- ----- --}}
                     <div role="tabpanel" class="tab-pane fade" id="watches" aria-labelledby="watches-tab">
-                        <div class="agile_ecommerce_tabs">
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal2"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
+                        <div class="agile_ecommerce_tabs ">
+                            @foreach ($n_backpack as $backpack)
+                                <div class="col-md-4 agile_ecommerce_tab_left ">
+                                    <img src="images/hinh_sp/{{ $backpack->hinh }}" alt=" "
+                                        class="img-responsive" />
+
+                                    <h5>
+                                        <a href="/single?id_sp={{ $backpack->ma_san_pham }}">
+                                            {{ $backpack->ten_san_pham }} </a>
+                                    </h5>
+                                    <div class="simpleCart_shelfItem ">
+                                        <p><span>${{ $backpack->don_gia }}</span> <i
+                                                class="item_price">${{ $backpack->gia_giam }}</i></p>
+                                        <p><a class="item_add" href="#">Add to cart</a></p>
                                     </div>
+
                                 </div>
-                                <h5><a href="/single">Watch</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal2"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Watch</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/13.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/12.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal2"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Watch</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
+                            @endforeach
                             <div class="clearfix"> </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="sandals" aria-labelledby="sandals-tab">
-                        <div class="agile_ecommerce_tabs">
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal3"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
+                        <div class="agile_ecommerce_tabs ">
+                            @foreach ($t_shirt as $shirt)
+                                <div class="col-md-4 agile_ecommerce_tab_left ">
+                                    <img src="images/hinh_sp/{{ $shirt->hinh }}" alt=" "
+                                        class="img-responsive" />
+
+                                    <h5>
+                                        <a href="/single?id_sp={{ $shirt->ma_san_pham }}">
+                                            {{ $shirt->ten_san_pham }} </a>
+                                    </h5>
+                                    <div class="simpleCart_shelfItem ">
+                                        <p><span>${{ $shirt->don_gia }}</span> <i
+                                                class="item_price">${{ $shirt->gia_giam }}</i></p>
+                                        <p><a class="item_add" href="#">Add to cart</a></p>
                                     </div>
+
                                 </div>
-                                <h5><a href="/single">Sandal</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal3"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Sandal</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/16.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/14.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/15.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal3"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Sandal</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
+                            @endforeach
+
                             <div class="clearfix"> </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="jewellery" aria-labelledby="jewellery-tab">
-                        <div class="agile_ecommerce_tabs">
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal4"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
+                        <div class="agile_ecommerce_tabs ">
+                            @foreach ($t_shirt as $shirt)
+                                <div class="col-md-4 agile_ecommerce_tab_left ">
+                                    <img src="images/hinh_sp/{{ $shirt->hinh }}" alt=" "
+                                        class="img-responsive" />
+
+                                    <h5>
+                                        <a href="/single?id_sp={{ $shirt->ma_san_pham }}">
+                                            {{ $shirt->ten_san_pham }} </a>
+                                    </h5>
+                                    <div class="simpleCart_shelfItem ">
+                                        <p><span>${{ $shirt->don_gia }}</span> <i
+                                                class="item_price">${{ $shirt->gia_giam }}</i></p>
+                                        <p><a class="item_add" href="#">Add to cart</a></p>
                                     </div>
+
                                 </div>
-                                <h5><a href="/single">Jewellery</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal4"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Jewellery</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 agile_ecommerce_tab_left">
-                                <div class="hs-wrapper">
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/17.jpg" alt=" " class="img-responsive" />
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
-                                    <div class="hs_bottom">
-                                        <ul>
-                                            <li>
-                                                <a href="#" data-toggle="modal" data-target="#myModal4"><span
-                                                        class="glyphicon glyphicon-eye-open"
-                                                        aria-hidden="true"></span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h5><a href="/single">Jewellery</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <p><span>$320</span> <i class="item_price">$250</i></p>
-                                    <p><a class="item_add" href="#">Add to cart</a></p>
-                                </div>
-                            </div>
+                            @endforeach
+
                             <div class="clearfix"> </div>
                         </div>
                     </div>
@@ -1016,34 +685,21 @@
     <div class="container">
         <h3>New Products</h3>
         <div class="agileinfo_new_products_grids">
-            <div class="col-md-3 agileinfo_new_products_grid">
-                <div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-                    <div class="hs-wrapper hs-wrapper1">
-                        <img src="images/ALL STAR NBA SHORT 1.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 2.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 1.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 2.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 1.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 2.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 1.png" alt=" " class="img-responsive" />
-                        <img src="images/ALL STAR NBA SHORT 2.png" alt=" " class="img-responsive" />
-                        <div class="hs_bottom hs_bottom_sub">
-                            <ul>
-                                <li>
-                                    <a href="#" data-toggle="modal" data-target="#myModal6"><span
-                                            class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-                                </li>
-                            </ul>
+            @foreach ($new_product as $n_product)
+                <div class="col-md-3 agileinfo_new_products_grid">
+                    <div class="agile_ecommerce_tab_left agileinfo_new_products_grid1 ">
+                        <img src="images/hinh_sp/{{ $n_product->hinh }}" alt=" " class="img-responsive" />
+                        <h5><a href="/single">{{ $n_product->ten_san_pham }}</a></h5>
+                        <div class="simpleCart_shelfItem">
+                            <p><span>${{ $n_product->don_gia }}</span> <i
+                                    class="item_price">${{ $n_product->gia_giam }}</i></p>
+                            <p><a class="item_add" href="#">Add to cart</a></p>
                         </div>
                     </div>
-                    <h5><a href="/single">ALL STAR NBA SHORT</a></h5>
-                    <div class="simpleCart_shelfItem">
-                        <p><span>$320</span> <i class="item_price">$250</i></p>
-                        <p><a class="item_add" href="#">Add to cart</a></p>
-                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 agileinfo_new_products_grid">
+            @endforeach
+
+            {{-- <div class="col-md-3 agileinfo_new_products_grid">
                 <div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
                     <div class="hs-wrapper hs-wrapper1">
                         <img src="images/ÁO KHOÁC NIKE BIG SWOOSH 1.png" alt=" " class="img-responsive" />
@@ -1069,8 +725,8 @@
                         <p><a class="item_add" href="#">Add to cart</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 agileinfo_new_products_grid">
+            </div> --}}
+            {{-- <div class="col-md-3 agileinfo_new_products_grid">
                 <div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
                     <div class="hs-wrapper hs-wrapper1">
                         <img src="images/JD_BALL_HG.jpg" alt=" " class="img-responsive" />
@@ -1096,8 +752,8 @@
                         <p><a class="item_add" href="#">Add to cart</a></p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 agileinfo_new_products_grid">
+            </div> --}}
+            {{-- <div class="col-md-3 agileinfo_new_products_grid">
                 <div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
                     <div class="hs-wrapper hs-wrapper1">
                         <img src="images/BALO JORDAN ZION .jpg" alt=" " class="img-responsive" />
@@ -1123,7 +779,7 @@
                         <p><a class="item_add" href="#">Add to cart</a></p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="clearfix"> </div>
         </div>
     </div>
